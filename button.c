@@ -518,7 +518,6 @@ int main(int argc, char *argv[]) {
     dev_write(device, image, sizeof(image));
 
     while (1) {
-        dev_write(device, image, sizeof(image));
         get_buttons(device);
         usleep(5*200000);
     }
